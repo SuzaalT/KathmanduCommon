@@ -1,0 +1,101 @@
+/* <!-- StAuth10244: I Sujal Thapa, 000904603 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else. --> */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #ebebe0; 
+  padding: 0.5em 5em;
+}
+.navbar .logo-container .logo {
+  height: 4.2rem;
+  width: 4.2rem; 
+  object-fit: cover; 
+}
+.navbar .menu-container {
+  flex-grow: 1;
+  font-size: 1.3rem;
+  text-align: right;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+  float: right;
+  align-items: center;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  color: #333; 
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #800000;
+  text-decoration: none;
+}
+#map {
+  width: 100%;
+  height: 300px;
+}
+
+footer {
+  background-color: #800000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+}
+.main-container{
+  padding: 2em 5em ;
+  min-height: 80vh;
+}
+@media only screen and (max-width: 680px) {
+  .navbar {
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(235, 235, 224, 0.8);
+  }
+
+  .navbar .logo-container {
+    position: sticky;
+    top: 0;
+  }
+
+  .menu-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color:#ebebe0 ;
+    width: 100%;
+    
+  }
+
+  .menu-container ul {
+    width: 100%;
+    flex-direction: row;
+    padding: 0.5em 0;
+    justify-content: space-around;
+  }
+
+
+  .main-container{
+    padding: 0.5em 0.5em;
+  }
+  
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lali Gurans Menu</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <link rel="stylesheet" href="styles/menu.css" />
+    <link rel="icon" type="image/jpeg" href="/image/logo.jpg" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-container">
+        <a href="index.html">
+          <img class="logo" src="./image/metalogo.png" alt="Lali Gurans Logo" />
+        </a>
+      </div>
+      <div class="menu-container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="menu.html" id="menu_button" class="btn">Menu</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <h1 class="text-center">Our Menu</h1>
+
+      <!-- Appetizers Section -->
+      <h2 class="mt-4">Appetizers</h2>
+      <div class="list-group" id="appetizers"></div>
+
+      <!-- Main Course Section -->
+      <h2 class="mt-4">Main Course</h2>
+      <div class="list-group" id="main-course"></div>
+
+      <!-- Desserts Section -->
+      <h2 class="mt-4">Desserts</h2>
+      <div class="list-group" id="dessert"></div>
+    </div>
+
+    <footer class="text-center mt-5">
+      <p>
+        1544 Queen St W, Toronto, ON M6R 1A6&nbsp;&nbsp;|&nbsp;&nbsp;(416)
+        530-4888
+      </p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/lali_gurans_/"
+          ><img src="image/instagram logo.png" alt="Instagram Logo" width="30"
+        /></a>
+        <a href="https://facebook.com"
+          ><img src="image/facebook logo.png" alt="Facebook Logo" width="30"
+        /></a>
+        <a href="https://tiktok.com"
+          ><img src="image/tiktok logo.png" alt="TikTok Logo" width="30"
+        /></a>
+      </div>
+    </footer>
+
+    <script defer src="scripts.js"></script>
+    <script defer src="./js/menu.js"></script>
+  </body>
+</html>

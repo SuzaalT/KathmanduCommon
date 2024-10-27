@@ -1,0 +1,153 @@
+:root {
+  --primary-color:black;
+  --secondary-color:white;
+  --font-color:white;
+  --hover-color:
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  height: 80px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color); 
+  padding: 0em 0em;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  color: white;
+}
+.nav-links{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2em; 
+}
+.nav-links li {
+  display: inline;
+}
+.nav-links a {
+  color: #fff; 
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.main-container{
+  min-height: 80vh;
+  /* padding: 0.5em 3em; */
+}
+img{
+  height: 100px;
+}
+
+
+/* Jimbu Restaurant Div */
+.restaurant-container {
+  width: 100%;
+}
+
+.split-layout {
+  display: flex; 
+  flex-direction: row; 
+}
+
+
+.restaurant-image-container, 
+.restaurant-description {
+  width: 50%; 
+}
+
+.restaurant-description {
+  flex-grow: 1;
+  background-color: grey;
+}
+
+.restaurant-image-container {
+  font-size:0;
+  line-height:0;
+}
+
+.split-layout .restaurant-image-container img{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 325px;
+}
+
+.SocialIcons img {
+  height: 30px;
+  
+}
+.footer {
+  background-color: var(--primary-color);
+  color: var(--font-color); 
+  padding: 0em 0em; 
+  text-align: center;
+}
+.footer-content {
+  display: flex; 
+  justify-content: space-around; 
+  flex-wrap: wrap; 
+  width: 100%;
+}
+.footer-content div{
+  width: 50%;
+}
+.SocialIcons{
+  text-align: right;
+  padding: 0em 2em;
+}
+.footer-section {
+  flex: 1; 
+  margin: 1em; 
+  
+  text-align: left;
+}
+
+.footer-logo{
+  height: 50px;
+}
+.company-footer{
+  background-color: var(--secondary-color);
+  align-items: center;
+  text-align: center; 
+
+}
+.company-footer-logo{
+  height: 75px;
+}
+.sister-company-logo{
+  height: 100px;
+}
+.sister-company-div{
+  display: flex;
+  justify-content: right;
+}
+.parent-div {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  width: 100%;
+  overflow: auto;
+  background-color: rgb(255, 255, 255);
+}
+.parent-div div{
+  width: 33%;
+}
+
+.jimbu-demo {
+  height: 60px;
+}
+
+.company-footer h6{
+  color: grey;
+  margin: 10px 0;
+}
+

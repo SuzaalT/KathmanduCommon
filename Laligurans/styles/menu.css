@@ -1,0 +1,58 @@
+.sidebar {
+  width: 25%;
+  position: fixed;
+  top: 56px; 
+  left: 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+}
+.sidebar img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.content {
+  margin-left: 25%; 
+  padding: 15px;
+}
+
+#menu_button {
+  background-color: #800000; 
+  color: white;         
+  border: none;           
+  padding: 10px 20px;      
+  border-radius: 5px;    
+  font-size: 16px;           
+  transition: background-color 0.3s, transform 0.3s; 
+  position: relative;       
+  overflow: hidden;         
+}
+
+#menu_button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;             
+  height: 150%;            
+  background: url('image/logo.jpg') no-repeat center center; 
+  background-size: cover; 
+  opacity: 0.2;          
+  transform: translate(-50%, -50%); 
+  z-index: 0;              
+}
+
+#menu_button:hover {
+  background-color: #a93226; 
+  transform: scale(1.05);   
+}
+
+#menu_button:focus {
+  outline: none;             
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+#menu_button span {
+  position: relative;      
+  z-index: 1;               
+}
